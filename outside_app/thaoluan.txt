@@ -2,9 +2,9 @@
 fsdafasd
 ádfasdfasdfasdfasdfasdfasdfassadfasd
 fsadfasd 
-
+fsdfasdf
 fdsfasdfads
-
+fsdafasdf
 
 fasdjfasdjfsad
 1122323232
@@ -12,6 +12,12 @@ fasdjfasdjfsad
 32323232323232
 232323232
 
+<<<<<<< HEAD
 thay doi 1
 thay doi 2
 thay doi 3
+=======
+0000000000000
+1111111111
+222222222
+>>>>>>> 0d21c6c829ca2a0821b9b85d0c54568a481695b7
