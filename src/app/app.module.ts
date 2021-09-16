@@ -13,6 +13,15 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
 import { SearchComponent } from './components/search/search.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { CarouselModule } from 'primeng/carousel';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { HomeComponent } from './components/home/home.component';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { FormsModule } from '@angular/forms';
+import { SliderModule } from 'primeng/slider';
+import { CheckboxModule } from 'primeng/checkbox';
+import { CardModule } from 'primeng/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +29,10 @@ import { CarouselModule } from 'primeng/carousel';
     FooterComponent,
     ShellComponent,
     SearchComponent,
+    CarouselComponent,
+    SidebarComponent,
+    ProductListComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +43,11 @@ import { CarouselModule } from 'primeng/carousel';
     TieredMenuModule,
     InputTextModule,
     CarouselModule,
+    RadioButtonModule,
+    FormsModule,
+    SliderModule,
+    CheckboxModule,
+    CardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

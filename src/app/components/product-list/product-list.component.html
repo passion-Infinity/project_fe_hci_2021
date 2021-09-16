@@ -1,0 +1,38 @@
+<div class="product-list">
+  <div class="grid">
+    <div class="col" *ngFor="let product of products">
+      <div class="product-item">
+        <p-card
+          class="product-item"
+          [header]="product.name"
+          [subheader]="product.info"
+          [style]="{
+            width: '400px',
+            height: '610px',
+            color: '#333',
+            cursor: 'pointer'
+          }"
+          styleClass="p-card-shadow"
+        >
+          <ng-template pTemplate="header">
+            <div class="img" style="height: 375px; padding-top: 30px">
+              <img alt="Card" src="assets/images/{{ product.img }}" />
+            </div>
+          </ng-template>
+          <p
+            style="
+              font-size: 1rem;
+              color: #333;
+              font-weight: 400;
+              margin-top: 10px;
+            "
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            sed consequuntur error repudiandae numquam deserunt quisquam
+            repellat
+          </p>
+        </p-card>
+      </div>
+    </div>
+  </div>
+</div>
