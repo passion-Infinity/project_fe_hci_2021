@@ -1,1 +1,56 @@
-<p>header works!</p>
+<header class="header">
+  <div class="wrapper-header">
+    <div class="header-top">
+      <div class="header-top-left">
+        <div class="logo">
+          <img src="assets/images/logo.jpg" alt="" />
+          <p>Faroten</p>
+        </div>
+        <div class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a href="">Top Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-top-right">
+        <div class="login-register">
+          <a class="btn-custom btn-login">Log in</a>
+          <a class="btn-custom btn-register">Sign up</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="header-categories has-popup">
+        <a class="btn-custom btn-categories"
+          ><i class="pi pi-list"></i>Categories</a
+        >
+        <div class="header-popup">
+          <ul>
+            <li *ngFor="let item of categories">
+              <a class="category-item" href=""
+                ><i class="pi pi-briefcase"></i>{{ item.name }}</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-search">
+        <app-search></app-search>
+      </div>
+      <div class="header-cart">
+        <a href=""><i class="pi pi-shopping-cart"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
