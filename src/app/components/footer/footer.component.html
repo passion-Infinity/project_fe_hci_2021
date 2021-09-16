@@ -1,1 +1,61 @@
-<!-- <p>footer works!</p> -->
+<div class="footer">
+  <div class="footer-top">
+    <ul class="Member">
+      <h4 class="title">Members</h4>
+      <li class="item member-item" *ngFor="let member of members">
+        <i class="pi pi-user"></i>
+        {{ member.name }}
+      </li>
+    </ul>
+
+    <ul class="social-contact">
+      <h4 class="title">Social</h4>
+      <li class="item social-item">
+        <img
+          style="width: 1.5rem"
+          src="assets/images/icon-facebook.PNG"
+          alt=""
+        />Facebook
+      </li>
+      <li class="item social-item">
+        <img
+          style="width: 1.5rem"
+          src="assets/images/icon-twiiter.PNG"
+          alt=""
+        />Twitter
+      </li>
+      <li class="item social-item">
+        <img
+          style="width: 1.5rem"
+          src="assets/images/icon-youtube.PNG"
+          alt=""
+        />YouTube
+      </li>
+      <li class="item social-item">
+        <img
+          style="width: 1.5rem"
+          src="assets/images/icon-google.PNG"
+          alt=""
+        />Google
+      </li>
+    </ul>
+
+    <ul class="info">
+      <h4 class="title">Info</h4>
+      <li class="item info-item">How it works</li>
+      <li class="item info-item">Great condition promise</li>
+      <li class="item info-item">No pain no gain</li>
+    </ul>
+
+    <div class="action">
+      <p-dropdown
+        [options]="languages"
+        [(ngModel)]="selectedLanguage"
+        optionLabel="name"
+      ></p-dropdown>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Faroten &copy; 2021</p>
+  </div>
+</div>
