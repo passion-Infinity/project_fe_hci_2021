@@ -1,0 +1,138 @@
+.sidebar {
+  width: 100%;
+  padding: 10px;
+
+  &-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  &-menu {
+    margin-bottom: 70px;
+    .sidebar-item {
+      margin: 40px 0;
+      a {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #333;
+        font-weight: 600;
+
+        i {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  &-sortBy {
+    width: 100%;
+
+    .sortBy-title {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: #000;
+      margin-bottom: 10px;
+    }
+    .item-price {
+      width: 100%;
+      padding: 10px 0;
+      label {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &-montthly-price {
+    margin-top: 50px;
+
+    .montthly-title {
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .montthly-slider {
+      margin-left: 15px;
+    }
+
+    h5 {
+      margin-top: 15px;
+      font-weight: 700;
+    }
+  }
+
+  &-rental-period {
+    margin-top: 60px;
+
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .period-content {
+      width: 100%;
+      border-radius: 50px;
+      border: 1px solid #ddd8d8;
+      margin-left: 10px;
+
+      .btn-rounded {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        outline: none;
+        border-radius: 50%;
+        margin-right: 39px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        line-height: 25px;
+        text-align: center;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          position: relative;
+          top: 14px;
+          font-size: 1rem;
+          font-weight: 500;
+          color: #b4b3b3;
+        }
+      }
+      .active {
+        background-color: #9f0003;
+        transform: scale(1.2);
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &-laptop-brand {
+    margin-top: 80px;
+    text-transform: uppercase;
+
+    .brand-title {
+      font-size: 1.2rem;
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-item {
+      margin: 15px 0;
+    }
+
+    label {
+      margin-left: 25px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #746f6f;
+    }
+  }
+}

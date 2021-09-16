@@ -1,0 +1,16 @@
+.home-page {
+  width: 100%;
+
+  .main-content {
+    width: 100%;
+    display: flex;
+
+    .content-sidebar {
+      width: 26%;
+    }
+
+    .content-product {
+      width: 72%;
+    }
+  }
+}

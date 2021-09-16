@@ -1,0 +1,99 @@
+<div class="sidebar">
+  <p class="sidebar-title">Computers</p>
+
+  <!-- Menu -->
+  <ul class="sidebar-menu">
+    <li class="sidebar-item" *ngFor="let item of computers">
+      <a href=""><i class="pi pi-book"></i>{{ item.name }}</a>
+    </li>
+  </ul>
+
+  <!-- Sort By -->
+  <div class="sidebar-sortBy">
+    <p class="sortBy-title">SORT BY</p>
+    <div class="p-field-radiobutton item-price">
+      <p-radioButton
+        name="most_popular"
+        value="Most popular"
+        [(ngModel)]="price_range"
+        inputId="most_popular"
+      ></p-radioButton>
+      <label for="most_popular">Most popular</label>
+    </div>
+    <div class="p-field-radiobutton item-price">
+      <p-radioButton
+        name="high_to_low"
+        value="Price (high to low)"
+        [(ngModel)]="price_range"
+        inputId="high_to_low"
+      ></p-radioButton>
+      <label for="high_to_low">Price (high to low)</label>
+    </div>
+    <div class="p-field-radiobutton item-price">
+      <p-radioButton
+        name="low_to_high"
+        value="Price (low to high)"
+        [(ngModel)]="price_range"
+        inputId="low_to_high"
+      ></p-radioButton>
+      <label for="low_to_high">Price (low to high)</label>
+    </div>
+    <div class="p-field-radiobutton item-price">
+      <p-radioButton
+        name="new_arrivals"
+        value="New arrivals"
+        [(ngModel)]="price_range"
+        inputId="new_arrivals"
+      ></p-radioButton>
+      <label for="new_arrivals">New arrivals</label>
+    </div>
+  </div>
+
+  <!-- Monthly Price -->
+  <div class="sidebar-montthly-price">
+    <p class="montthly-title">MONTHLY PRICE</p>
+    <div class="montthly-slider">
+      <p-slider
+        [(ngModel)]="rangePriceValues"
+        [range]="true"
+        [min]="0"
+        [max]="5000"
+        class="montthly-slider"
+      ></p-slider>
+      <h5>${{ rangePriceValues[0] + " - $" + rangePriceValues[1] }}</h5>
+    </div>
+  </div>
+
+  <!-- Rental period -->
+  <div class="sidebar-rental-period">
+    <p>MINIMUM RENTAL PERIOD</p>
+    <div class="period-content">
+      <div
+        class="btn-rounded"
+        *ngFor="let item of month_periods; let i = index"
+        (click)="onSelect(i)"
+        [ngClass]="currentIndex === i ? 'active' : ''"
+      >
+        <a>{{ item }}</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Laptop Brand -->
+  <div class="sidebar-laptop-brand">
+    <p class="brand-title">Laptop Brands</p>
+    <div class="brand-checkbox">
+      <div
+        class="p-field-checkbox checkbox-item"
+        *ngFor="let item of brand_computer"
+      >
+        <p-checkbox
+          [name]="item.name"
+          [value]="item.name"
+          [(ngModel)]="selectedBrand"
+        ></p-checkbox>
+        <label>{{ item.name }}</label>
+      </div>
+    </div>
+  </div>
+</div>
