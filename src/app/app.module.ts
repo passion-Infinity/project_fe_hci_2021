@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
 import { SliderModule } from 'primeng/slider';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CardModule } from 'primeng/card';
+import { DropdownModule } from 'primeng/dropdown';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +49,7 @@ import { CardModule } from 'primeng/card';
     SliderModule,
     CheckboxModule,
     CardModule,
+    DropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
