@@ -15,12 +15,18 @@
       margin: 40px 0;
       a {
         display: inline-block;
-        font-size: 1.4rem;
-        color: #333;
-        font-weight: 600;
 
         i {
           margin-right: 20px;
+          font-size: 1.4rem;
+          color: #333;
+          font-weight: 600;
+        }
+
+        span {
+          font-size: 1.4rem;
+          color: #333;
+          font-weight: 600;
         }
       }
     }
@@ -137,8 +143,212 @@
   }
 }
 
+// IPad
 @media only screen and (max-width: 1024px) {
   .sidebar {
-    display: none;
+    &-menu {
+      .sidebar-item {
+        a {
+          i {
+            font-size: 1.1rem;
+          }
+
+          span {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    &-rental-period {
+      p {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .period-content {
+        width: 100%;
+        border-radius: 50px;
+        border: 1px solid #ddd8d8;
+        margin-left: 10px;
+
+        .btn-rounded {
+          width: 30px;
+          height: 30px;
+          margin-right: 27px;
+          line-height: 15px;
+          text-align: center;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            top: 7px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    &-laptop-brand {
+      .brand-title {
+        font-size: 1rem;
+      }
+      label {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    &-title {
+      font-size: 2.2rem;
+    }
+
+    &-menu {
+      .sidebar-item {
+        a {
+          i {
+            font-size: 1rem;
+          }
+
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    &-sortBy {
+      .sortBy-title {
+        font-size: 0.8rem;
+      }
+      .item-price {
+        label {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &-montthly-price {
+      .montthly-title {
+        font-size: 13px;
+      }
+
+      h5 {
+        font-size: 13px;
+      }
+    }
+
+    &-rental-period {
+      p {
+        font-size: 14px;
+      }
+
+      .period-content {
+        width: 100%;
+        border-radius: 50px;
+        border: 1px solid #ddd8d8;
+        margin-left: 10px;
+
+        .btn-rounded {
+          width: 40px;
+          height: 40px;
+          margin-right: 3px;
+          line-height: 20px;
+          text-align: center;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            top: 11px;
+            font-size: 15px;
+          }
+        }
+        .active {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &-laptop-brand {
+      .brand-title {
+        font-size: 1rem;
+      }
+      label {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    height: 420px;
+
+    &-title {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    &-menu {
+      display: flex;
+      flex-wrap: wrap;
+      .sidebar-item {
+        width: 265px;
+        height: 96px;
+        background-color: #f1f1f1;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10px;
+        line-height: 96px;
+        border-radius: 10px;
+
+        &:hover {
+          background-color: #fff;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          i {
+            position: relative;
+            top: 23px;
+            left: 7px;
+          }
+
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    &-sortBy {
+      display: none;
+    }
+
+    &-montthly-price {
+      display: none;
+    }
+
+    &-rental-period {
+      display: none;
+    }
+
+    &-laptop-brand {
+      display: none;
+    }
   }
 }

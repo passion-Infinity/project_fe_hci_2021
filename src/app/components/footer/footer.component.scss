@@ -57,6 +57,62 @@
 
 @media only screen and (max-width: 1024px) {
   .footer {
-    width: 1024px;
+    width: 57%;
+    padding: 0 20px;
+
+    &-top {
+      padding-top: 25px;
+      margin-top: 25px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 44%;
+    &-top {
+      padding: 20px 30px;
+
+      .item {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    width: 35%;
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 665px;
+      margin-left: 74px;
+
+      ul {
+        width: 240px;
+        height: 265px;
+
+        .title {
+          position: relative;
+          top: 0;
+          left: 24px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .action {
+      display: none;
+    }
+
+    &-bottom {
+      height: 50px;
+      line-height: 25px;
+    }
   }
 }

@@ -32,13 +32,13 @@
   <div class="header-bottom">
     <div class="header-categories has-popup">
       <a class="btn-custom btn-categories"
-        ><i class="pi pi-list"></i>Categories</a
+        ><i class="pi pi-list"></i><span>Categories</span></a
       >
       <div class="header-popup">
         <ul>
           <li *ngFor="let item of categories">
             <a class="category-item" href=""
-              ><i class="pi pi-briefcase"></i>{{ item.name }}</a
+              ><i [class]="item.icon"></i>{{ item.name }}</a
             >
           </li>
         </ul>

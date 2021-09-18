@@ -21,16 +21,70 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+// IPad Pro
+@media only screen and (max-width: 1800px) {
   .home-page {
-    width: 100%;
+    width: 95%;
+
     .main-content {
+      width: 100%;
+
       .content-sidebar {
-        display: none;
+        width: 30%;
       }
 
       .content-product {
-        width: 1024px;
+        width: 80%;
+      }
+    }
+  }
+}
+
+// IPad
+@media only screen and (max-width: 1024px) {
+  .home-page {
+    width: 80%;
+    .main-content {
+      .content-sidebar {
+        width: 20%;
+      }
+
+      .content-product {
+        width: 50%;
+      }
+    }
+  }
+}
+
+//small tablet
+@media only screen and (max-width: 768px) {
+  .home-page {
+    width: 75%;
+    .main-content {
+      .content-sidebar {
+        width: 18%;
+      }
+
+      .content-product {
+        width: 37%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-page {
+    width: 75%;
+    .main-content {
+      display: flex;
+      flex-direction: column;
+
+      .content-sidebar {
+        width: 45%;
+      }
+
+      .content-product {
+        width: 42%;
       }
     }
   }

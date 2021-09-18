@@ -4,7 +4,9 @@
   <!-- Menu -->
   <ul class="sidebar-menu">
     <li class="sidebar-item" *ngFor="let item of computers">
-      <a href=""><i class="pi pi-book"></i>{{ item.name }}</a>
+      <a href=""
+        ><i [class]="item.icon"></i><span>{{ item.name }}</span></a
+      >
     </li>
   </ul>
 

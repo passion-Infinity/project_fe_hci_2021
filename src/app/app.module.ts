@@ -23,6 +23,7 @@ import { SliderModule } from 'primeng/slider';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
+import { RatingModule } from 'primeng/rating';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +51,7 @@ import { DropdownModule } from 'primeng/dropdown';
     CheckboxModule,
     CardModule,
     DropdownModule,
+    RatingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
